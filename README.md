@@ -27,6 +27,26 @@ Run the program with the -h flag to see the available options.
 And yes, you *need* to be root to use polarlib/programs that use it.
 ```
 # ./main.py -h
+
+Product ..: Polar Loop
+Serial ...: xxxxxxxxx
+Model ....: Unisex
+Color ....: Black
+
+Bootloader version ..: 1.1.7
+Platform version ....: 0.9.5
+Device version ......: 1.2.16
+SVN revision ........: 120996
+System ID ...........: xxxxxxxxxx
+Hardware code .......: xxxxxxxxxx
+
+Stats for 2016-04-13:
+  Steps ....: 2229
+  Time to go:
+    Up .....: 06:09:00
+    Walk ...: 01:50:00
+    Jog ....: 00:48:00
+
 ```
 
 ### Thanks:
