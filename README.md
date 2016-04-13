@@ -26,7 +26,7 @@ Run the program with the -h flag to see the available options.
 
 And yes, you *need* to be root to use polarlib/programs that use it.
 ```
-# ./main.py -h
+# ./main.py --device-info --stats
 
 Product ..: Polar Loop
 Serial ...: xxxxxxxxx
