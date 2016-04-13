@@ -1,0 +1,26 @@
+package polar;
+import "common.proto";
+
+message Dsum {
+	required Date date = 1;
+	required int32 steps = 2;
+	required TimeToGo timeToGo = 6;
+	required UnknownTimes unkTimes = 7;
+}
+
+message TimeToGo {
+	required Time up = 3;
+	required Time walk = 4;
+	required Time jog = 5;
+}
+
+message UnknownTimes {
+	required Time a = 1;
+	required Time b = 2;
+	required Time c = 3;
+	required Time d = 4;
+	required Time e = 5;
+	required Time f = 6;
+	required Time g = 7;
+	required Time h = 8;
+}

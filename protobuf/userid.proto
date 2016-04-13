@@ -1,0 +1,14 @@
+package polar;
+
+import "common.proto";
+
+message UserID {
+	required int32 id = 1;
+	required DateTime modified = 100;
+	//required Unknown unknown = 3;
+}
+
+/*message Unknown {
+	required bytes data = 1;
+	required int32 num = 2;
+}*/

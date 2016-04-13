@@ -1,0 +1,19 @@
+package polar;
+import "common.proto";
+
+message Prefs {
+	required Preferences prefs = 1;
+	required DateTime modified = 101;
+}
+
+message Preferences {
+	// Might be enums
+	optional int32 a = 1;
+	optional int32 b = 2;
+	optional int32 c = 3;
+	optional int32 d = 4;
+	optional int32 e = 5;
+	optional int32 f = 6;
+	optional int32 g = 7;
+	optional int32 h = 8;
+}

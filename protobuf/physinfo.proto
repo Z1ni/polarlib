@@ -1,0 +1,52 @@
+package polar;
+
+import "common.proto";
+
+message PhysicalInformation {
+	required Birthday birthday = 1;
+	required Gender gender = 2;
+	required Weight weight = 3;
+	required Height height = 4;
+	optional VO2Max vo2max = 10;
+	optional TrainingBackground trainingBackground = 11;
+	required DateTime modified = 100;
+}
+
+message Birthday {
+	required Date value = 1;
+	required DateTime modified = 2;
+}
+
+enum GenderOption {
+	MALE = 1;
+	FEMALE = 2;
+}
+
+message Gender {
+	required GenderOption value = 1;
+	required DateTime modified = 2;
+}
+
+message Weight {
+	required float value = 1;
+	required DateTime modified = 2;
+}
+
+message Height {
+	required float value = 1;
+	required DateTime modified = 2;
+}
+
+message VO2Max {
+	required int32 value = 1;
+	required DateTime modified = 2;
+}
+
+enum TrainingBackgroundOption {
+	OCCASIONAL = 10;
+}
+
+message TrainingBackground {
+	required TrainingBackgroundOption value = 1;
+	required DateTime modified = 2;
+}

@@ -1,0 +1,19 @@
+package polar;
+
+message Date {
+	required int32 year = 1;
+	required int32 month = 2;
+	required int32 day = 3;
+}
+
+message Time {
+	required int32 hours = 1;
+	required int32 minutes = 2;
+	required int32 seconds = 3;
+	required int32 milliseconds = 4;
+}
+
+message DateTime {
+	required Date date = 1;
+	required Time time = 2;
+}

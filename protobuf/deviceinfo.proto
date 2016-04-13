@@ -1,0 +1,21 @@
+package polar;
+
+message DeviceInfo {
+	required Version bootloaderVer = 1;
+	required Version platformVer = 2;
+	required Version deviceVer = 3;
+	required int32 svnRev = 4;
+	optional string devId = 5;
+	required string serial = 6;
+	required string model = 7;
+	required string hwCode = 8;
+	required string color = 9;
+	required string design = 10;
+	required string sysId = 11;
+}
+
+message Version {
+	required int32 major = 1;
+	required int32 minor = 2;
+	required int32 patch = 3;
+}
