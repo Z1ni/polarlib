@@ -1,6 +1,7 @@
 import usb.core
 import usb.util
 import struct
+import datetime as dt
 import deviceinfo   # For DEVICE.BPB
 import physinfo     # For PHYSINFO.BPB
 import dsum         # For DSUM.BPB
@@ -345,7 +346,7 @@ class Device:
 
         Returns an instance of Dsum
         """
-        t_str = date.strftime("%Y%m%d")
+        t_str = dt.datetime.strptime(date, "%Y-%m-%d").strftime("%Y%m%d")
         d = self.get_data("/U/0/%s/DSUM/DSUM.BPB" % t_str)
         if d == b"":
             return None
